@@ -1,0 +1,55 @@
+body{
+    background: #F3FEEF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.ipt1{
+width: 670px;
+height: 50px;
+background:#37623C;
+color:#F3FEEF ;
+font-size: 20px;
+}
+.ipt2{
+width: 670px;
+height: 50px;
+background:#37623C;
+color:#F3FEEF ;
+font-size: 20px;
+}
+.ipt3{
+width: 670px;
+height: 50px;
+background:#37623C;
+color:#F3FEEF ;
+font-size: 20px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #31F248;
+    width: 430px;
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    
+}
+
+.button{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+}
