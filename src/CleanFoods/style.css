@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-family: 'Jeju Myeongjo', serif;
+    background: #F3FEEF;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F4FDF1;
+    padding: 20px 10px; 
+    
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 80px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #084D22;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    background-color: #d4f5dc; 
+    color: #084D22; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.icons img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+main {
+    margin-top: 190px; 
+    display: flex;
+    background-color: #F4FDF1;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    background-color: #f3d9a9;
+    padding: 20px;
+    align-items: center;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.image img {
+    width: 400px;
+    height: auto;
+}
+
+.text {
+    padding-left: 20px;
+    max-width: 900px;
+}
+#news-container,
+#produtos-container,
+#feedback-container,
+#nutricionista-container {
+    padding-top: 100px; 
+    margin-top: -100px;
+}
+
+/* Produtos */
+
+.food-section {
+    width: 100%;
+    display: block; 
+    margin-top: 40px; 
+}
+
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 40px;
+}
+
+.card {
+    width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #084D22;
+    margin-bottom: 50px;
+}
+
+.card.amarelo {
+    background-color: #f4f5cd; 
+    width: 500px;
+}
+
+.card.bege {
+    background-color: #fde4de; 
+    width: 500px;
+}
+
+.card.azul {
+    background-color: #d6fcff; 
+    width: 500px;
+}
+
+.card.amarelo .content {
+    background-color: #f4f5cd; /* muda a cor onde fica texto */
+}
+
+.card.bege .content {
+    background-color: #fde4de; /* muda a cor onde fica texto */
+}
+
+.card.azul .content {
+    background-color: #d6fcff; /* muda a cor onde fica texto */
+}
+.card .content a {
+    text-decoration: none;  
+    color: #084D22; 
+    font-weight: bold;
+}
+
+.card .content a:hover {
+    text-decoration: underline; 
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+.secFeed{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    gap: 60px;
+    justify-content: center;
+}
+
+.titulo{
+    color: #084D22;
+    width: 70%;
+    text-align: center;
+    font-size: 62px;
+
+}
+
+.linha{
+    width: 100%;
+    height: 1px;
+    background:#084D22;
+}
+
+.containerFeed{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    margin-top: 38px;
+    justify-content: center;
+}
+
+.containerFeed > h2{
+    color: #084D22;
+    width: 754px;
+    display: flex;
+    text-align: center;
+    
+}
+
+h2{
+    display: flex;
+    text-align: end;
+}
+
+.comentariosFeed{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.textF{
+    color: #084D22;
+    font-size: 18px;
+}
+
+.inputT{
+    width: 981px;
+    height: 201px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #084D22 5px;
+    margin-top: 10px;
+
+}
+
+.btnF{
+    margin-top: 75px;
+    background-color: #76FF86;
+    width: 426px;
+    height: 49px;
+    border-radius: 21px;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    color: #084D22;
+    width: 100%;
+    text-align: center;
+    font-size: 62px;
+
+}
+
+.linha{
+    width: 100%;
+    height: 1px;
+    background:#084D22;
+}
+
+.containerArt{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    margin-top: 38px;
+    justify-content: center;
+}
+.containerArt > h2{
+    color: #084D22;
+    width: 754px;
+    display: flex;
+    text-align: center;
+    
+}
+
+h2{
+    display: flex;
+    text-align: end;
+}
+
+.comentariosArt{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.textArt{
+    color: #084D22;
+    font-size: 18px;
+}
+
+.inputArt{
+    width: 981px;
+    height: 201px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #084D22 5px;
+    margin-top: 10px;
+
+}
+
+.btnArt{
+    background-color: #76FF86;
+    width: 426px;
+    height: 49px;
+    border-radius: 21px;
+    color: white;
+    font-size: 24px;
+    
+}
+
+.buttonsArt{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+
