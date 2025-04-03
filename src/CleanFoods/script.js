@@ -21,6 +21,31 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    document.addEventListener("scroll", () => {
+        const sections = document.querySelectorAll("section div[id]");
+        const navLinks = document.querySelectorAll("nav ul li a");
+
+        let currentSection = "";
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - document.querySelector("header").offsetHeight;
+            const sectionHeight = section.offsetHeight;
+
+            if (window.scrollY >= sectionTop - sectionHeight / 3) {
+                currentSection = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").includes(currentSection)) {
+                link.classList.add("active");
+            }
+        });
+    });
+    
+
     
     const btnFeedback = document.querySelector(".btnF");
     const feedbackInput = document.querySelector(".inputT");
@@ -47,6 +72,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         document.querySelector(".comentarios").innerHTML = "<h3>Obrigado pelo seu feedback!</h3>";
     });
+
+
+
+    
+    
 });
 
 
